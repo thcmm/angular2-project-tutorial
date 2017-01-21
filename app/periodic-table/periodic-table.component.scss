@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.periodic-table {
+  width: 100%;
+}
+
+.element {
+  background-color: gray;
+  width: 5.5555%;
+  height: 60px;
+  float: left;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.element:hover {
+  border-color: #ADD8E6;
+}
+
+.blank {
+  background-color: transparent;
+  border: none;
+}
